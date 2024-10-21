@@ -1,0 +1,65 @@
+/* src/components/Calculator.css */
+body{
+    background-color: black;
+}
+.calculator {
+    width: 250px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  input {
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    text-align: right;
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #0056b3; /* Darker border color on focus */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .button {
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* Text color */
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+  }
+  
+  .button:nth-child(4n) {
+    background-color: #28a745; /* Green for the '=' button */
+  }
+  
+  .button:nth-child(11) {
+    background-color: #dc3545; /* Red for the 'C' button */
+  }
+  
